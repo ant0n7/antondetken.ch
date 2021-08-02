@@ -1,5 +1,24 @@
-$font: Futura;
+$font: futura-pt, sans-serif;
+$background: rgb(8, 29, 38);
+*{
+    font-family: font;
+    color: #FFF !important;
+  }
+  h1 {
+    text-align: center;
+  }
+  
+  .navtext{
+    position: absolute;
+    right: 3vw;
+  }
+  
+  .bg-light, body{
+    background-color: $background !important;
+  
+  }
 
-h1 {
-    font-family: $font;
-}
+  .navbar-toggler{
+      background-color: white;
+  }
+  /*# sourceMappingURL=style.css.map */

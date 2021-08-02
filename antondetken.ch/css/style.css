@@ -1,5 +1,22 @@
+* {
+  font-family: font;
+  color: #FFF !important;
+}
+
 h1 {
-  font-family: Futura;
   text-align: center;
+}
+
+.navtext {
+  position: absolute;
+  right: 3vw;
+}
+
+.bg-light, body {
+  background-color: #081d26 !important;
+}
+
+.navbar-toggler {
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
