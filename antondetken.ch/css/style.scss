@@ -1,5 +1,6 @@
 $font: futura-pt, sans-serif;
 $background: rgb(8, 29, 38);
+$border-radius: 5px;
 * {
     font-family: $font;
     color: #FFF !important;
@@ -72,6 +73,14 @@ $background: rgb(8, 29, 38);
       height: 500px;
       width: 100%;
       object-fit: cover;
+      border-radius: $border-radius;
+
+      transition: .5s;
+      &:hover{
+          transform: scale(1.03);
+          transition: .5s;
+      }
+      
   }
   
   .row {

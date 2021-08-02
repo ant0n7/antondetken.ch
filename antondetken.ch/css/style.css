@@ -71,6 +71,16 @@ nav {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.gallery img:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .row {
