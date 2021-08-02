@@ -1,24 +1,57 @@
 $font: futura-pt, sans-serif;
 $background: rgb(8, 29, 38);
-*{
+* {
     font-family: $font;
     color: #FFF !important;
   }
+  
   h1 {
     text-align: center;
   }
   
-  .navtext{
-    position: absolute;
-    right: 3vw;
-  }
-  
-  .bg-light, body{
-    background-color: $background !important;
-  
+  .active{
+      font-weight: 550;
   }
 
-  .navbar-toggler{
-      background-color: white;
+  nav{
+      font-size: 22px;
   }
-  /*# sourceMappingURL=style.css.map */
+  .bg-light, body {
+    background-color: $background !important;
+  }
+  
+  .navbar-toggler {
+    border-color: rgba(255, 102, 0, 0) !important; 
+  }
+  
+  .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+  }
+  .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
+      outline: none;
+      box-shadow: none;
+  }
+  #anton_detken-title{
+      transition: 500ms;
+      width: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+}
+@media (max-width: 992px){
+    #anton_detken-title{
+        width: 75%;
+  } 
+}
+
+@media (max-width: 600px){
+    #anton_detken-title{
+        width: 100%;
+  } 
+}
+
+#anton_img-nav{
+    height: 80px;
+    padding: 0px;
+    transition: height 0.7s ease-out;
+}

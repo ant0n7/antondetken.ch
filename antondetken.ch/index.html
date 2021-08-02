@@ -25,7 +25,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">anton detken</a>
+          <a class="navbar-brand" href="#"><p id="anton_text-nav">anton detken</p> <img id="anton_img-nav" src="./img/adlogo-320x320.png" alt=""> </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -38,8 +38,25 @@
           </div>
         </div>
       </nav>
+    <div class="container">
+        <img src="img/a_d-titel.png" alt="" id="anton_detken-title" >
+    </div>
+    
+<script>
+    function myFunction(x) {
+  if (x.matches) { // If media query matches
+    document.querySelector("#anton_img-nav").setAttribute("style", "display:block");
+    document.querySelector("#anton_text-nav").setAttribute("style", "display:none");
 
+  } else {
+    document.querySelector("#anton_img-nav").setAttribute("style", "display:none");
+    document.querySelector("#anton_text-nav").setAttribute("style", "display:block");
+  }
+}
 
-
+var x = window.matchMedia("(max-width: 992px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+</script>
 </body>
 </html>
