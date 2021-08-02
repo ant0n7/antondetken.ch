@@ -16,6 +16,7 @@ $background: rgb(8, 29, 38);
   /* ----> NAVBAR-STYLING <---- */
   nav {
     font-size: 22px;
+    font-weight: 500;
   }
   
   .navbar-toggler {
@@ -40,7 +41,7 @@ $background: rgb(8, 29, 38);
   }
   
   .active {
-    font-weight: 550;
+    text-decoration: overline;
   }
   
   /* ----> HOME-STYLING <---- */
@@ -66,5 +67,15 @@ $background: rgb(8, 29, 38);
       width: 100%;
     }
   }
+
+  img{
+      height: 500px;
+      width: 100%;
+      object-fit: cover;
+  }
   
+  .row {
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
   /*# sourceMappingURL=style.css.map */
