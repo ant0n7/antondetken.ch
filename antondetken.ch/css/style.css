@@ -1,6 +1,6 @@
 * {
   font-family: futura-pt, sans-serif;
-  color: #FFF !important;
+  color: #fff !important;
 }
 
 h1 {
@@ -8,14 +8,15 @@ h1 {
 }
 
 .active {
-  font-weight: 550;
+  text-decoration: underline;
 }
 
 nav {
   font-size: 22px;
 }
 
-.bg-light, body {
+.bg-light,
+body {
   background-color: #081d26 !important;
 }
 
@@ -27,7 +28,9 @@ nav {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
 
-.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
