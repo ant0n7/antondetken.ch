@@ -13,6 +13,14 @@ $border-radius: 5px;
   .bg-light, body {
     background-color: $background !important;
   }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
   
   /* ----> NAVBAR-STYLING <---- */
   nav {
