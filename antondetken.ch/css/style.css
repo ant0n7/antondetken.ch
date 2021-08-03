@@ -86,6 +86,7 @@ nav {
 }
 
 .gallery img:hover {
+  cursor: pointer;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
   -webkit-transition: .5s;

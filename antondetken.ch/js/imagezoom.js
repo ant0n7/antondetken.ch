@@ -15,6 +15,7 @@ position: 'fixed',
 zIndex: '10000',
 top: '0',
 left: '0',
+cursor: 'pointer',
 
 }).click(function() {
 removeModal();

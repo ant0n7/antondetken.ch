@@ -85,6 +85,7 @@ $border-radius: 5px;
 
       transition: .5s;
       &:hover{
+          cursor: pointer;
           transform: scale(1.03);
           transition: .5s;
       }
