@@ -3,12 +3,17 @@
   color: #FFF !important;
 }
 
+.bg-light, body {
+  background-color: #081d26 !important;
+}
+
 h1 {
   text-align: center;
 }
 
-.bg-light, body {
-  background-color: #081d26 !important;
+.row {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 body::-webkit-scrollbar {
@@ -75,6 +80,7 @@ nav {
   }
 }
 
+/* ----> Photos/Gallery <----*/
 .gallery img {
   height: 500px;
   width: 100%;
@@ -91,11 +97,6 @@ nav {
           transform: scale(1.03);
   -webkit-transition: .5s;
   transition: .5s;
-}
-
-.row {
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .close {
@@ -150,13 +151,4 @@ nav {
   -webkit-transition: none;
   transition: none;
 }
-
-/*
-  
-
-  
-  .carousel-item img{
-    object-fit: contain;
-    height: 100% !important;
-  }*/
 /*# sourceMappingURL=style.css.map */
