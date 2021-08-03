@@ -1,3 +1,5 @@
+@import 'cursor';
+
 $font: futura-pt, sans-serif;
 $background: rgb(8, 29, 38);
 $lightbackground: rgb(255,255,255);
@@ -5,6 +7,9 @@ $border-radius: 5px;
 * {
     font-family: $font;
     color: #FFF !important;
+    // &:hover {
+    //   cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' version='1.1'%3E%3Ccircle cx='8' cy='8' r='8' stroke='%235cb85c' stroke-width='0' fill='%23ffffff'%3E%3C/circle%3E%3C/svg%3E") 16 16, pointer !important;
+    // }
   }
   .bg-light, body {
     background-color: $background !important;
