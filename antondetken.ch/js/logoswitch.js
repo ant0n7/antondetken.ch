@@ -12,4 +12,4 @@
 
 var x = window.matchMedia("(max-width: 992px)")
 myFunction(x) 
-x.addListener(myFunction) 
+x.addEventListener("change", myFunction) 
