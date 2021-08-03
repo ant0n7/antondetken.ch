@@ -171,9 +171,14 @@ $border-radius: 5px;
     position: fixed;
     text-align: center;
     height: 25px;
-    border-top: white 1px solid;
+    font-weight: 200;
     bottom: 0;
     width: 100%;
+}
+@media (max-width: 500px){
+  footer{
+    height: 50px;
+  }
 }
   
 
