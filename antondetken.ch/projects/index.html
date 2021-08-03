@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Anton Detken</title>
+
+    <!-- Google Fonts -->
+
+    <!-- Adobe Fonts -->
+    
+    
+    <!-- Bootstrap 5.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="https://use.typekit.net/yar5hev.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./../"><p id="anton_text-nav">anton detken</p> <img id="anton_img-nav" src="../img/adlogo-320x320.png" alt=""> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar-text" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link " aria-current="page" href="./../">home</a>
+              <a class="nav-link " href="./../photos/">photos</a>
+              <a class="nav-link active" href="">webdesign</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container gallery project-gallery">
+      <div class="row">
+        <div class="col-lg-8">
+          <a href="https://www.swissbanking.ch/en" title="Official SwissBanking-Website" target="_blank">
+            <img src="./../img/proj/sba.jpg" alt="current SwissBanking-Website">
+          </a>
+          <h3 class="img-desc">SwissBanking-Migration</h3>
+        </div>
+        <div class="col-lg-4"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-8">
+          <a href="https://antondetken.eu/sites/fehralturf/" title="Unofficial Fehralturf-Website" target="_blank">
+            <img src="./../img/proj/fehr.jpg" alt="Concept site for the Fehralturf horse race">
+          </a>
+          <h3 class="img-desc">Unofficial remake for the Fehralturf-Website</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          <img data-enlargeable src="../img/blg/_DSC2547.jpg" alt="">
+        </div>
+        <div class="col-lg-4"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-8">
+          <img data-enlargeable src="../img/blg/_DSC2749.jpg" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          <img data-enlargeable src="../img/blg/_DSC3584.jpg" alt="">
+        </div>
+        <div class="col-lg-4"></div>
+      </div>
+    </div>
+    
+    <script src="../js/imagezoom.js" ></script>
+<script>
+    function myFunction(x) {
+  if (x.matches) { 
+    document.querySelector("#anton_img-nav").setAttribute("style", "display:block");
+    document.querySelector("#anton_text-nav").setAttribute("style", "display:none");
+
+  } else {
+    document.querySelector("#anton_img-nav").setAttribute("style", "display:none");
+    document.querySelector("#anton_text-nav").setAttribute("style", "display:block");
+  }
+}
+
+var x = window.matchMedia("(max-width: 992px)")
+myFunction(x) 
+x.addListener(myFunction) 
+</script>
+</body>
+</html>
