@@ -90,6 +90,18 @@ nav {
   #anton_detken-title {
     width: 75%;
   }
+  .active {
+    border-right: white solid 2px;
+  }
+  .nav-link {
+    text-decoration: none;
+    text-align: right;
+    margin-right: 12px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 0;
+    padding-right: 5px !important;
+  }
 }
 
 @media (max-width: 600px) {
@@ -173,5 +185,14 @@ nav {
           transform: none;
   -webkit-transition: none;
   transition: none;
+}
+
+footer {
+  position: fixed;
+  text-align: center;
+  height: 25px;
+  border-top: white 1px solid;
+  bottom: 0;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
