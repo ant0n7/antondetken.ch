@@ -85,6 +85,7 @@ nav {
   transition: 500ms;
   width: 50%;
   margin-top: 10vh;
+  margin-bottom: 10vh;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -226,5 +227,10 @@ footer {
   .mobile {
     display: block;
   }
+}
+
+.fixed {
+  position: relative !important;
+  bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
