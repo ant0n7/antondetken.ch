@@ -2,7 +2,7 @@
   cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' version='1.1'%3E%3Ccircle cx='8' cy='8' r='8' stroke='%23ffffff' stroke-width='0' fill='%23ffffff'%3E%3C/circle%3E%3C/svg%3E") 16 16, pointer !important;
 }
 
-a:hover, .gallery img {
+html a:hover, body a:hover .gallery img {
   cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' version='1.1'%3E%3Ccircle cx='8' cy='8' r='8' stroke='%23DD0814' stroke-width='0' fill='%23DD0814'%3E%3C/circle%3E%3C/svg%3E") 16 16, pointer !important;
 }
 
@@ -18,15 +18,25 @@ a:hover, .gallery img {
 
 * {
   font-family: futura-pt, sans-serif;
-  color: #FFF !important;
+  color: #fff !important;
 }
 
-.bg-light, body {
+.bg-light,
+body {
   background-color: #081d26 !important;
 }
 
 h1 {
   text-align: center;
+}
+
+.centered {
+  margin: auto;
+  font-size: 10vh;
+}
+
+.centered-parent {
+  height: 40vh;
 }
 
 .row {
@@ -75,7 +85,12 @@ nav {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
 
-.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus, .close:focus, .close:active, .close:focus {
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus,
+.close:focus,
+.close:active,
+.close:focus {
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -112,16 +127,16 @@ nav {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .gallery img:hover {
   cursor: pointer;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .project-gallery img {
@@ -149,7 +164,7 @@ nav {
   right: 0;
   top: 0;
   z-index: 1200;
-  opacity: .8;
+  opacity: 0.8;
   margin: 5px;
 }
 
@@ -161,7 +176,8 @@ nav {
   background-color: rgba(8, 29, 38, 0.5);
 }
 
-.slide, .carousel-inner {
+.slide,
+.carousel-inner {
   position: fixed;
   height: 100%;
   width: 100%;

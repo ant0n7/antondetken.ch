@@ -25,17 +25,15 @@
     ></script>
 
     <!-- Custom -->
-    <link rel="stylesheet" href="https://use.typekit.net/yar5hev.css" />
+    <link rel="stylesheet" href="./../css/futura.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html"
+        <a class="navbar-brand" href="./../"
           ><p id="anton_text-nav">anton detken</p>
-          <img id="anton_img-nav" src="../img/adlogo-320x320.png" alt="" />
+          <img id="anton_img-nav" src="../img/adlogo-320x320.png" alt="Logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -53,37 +51,20 @@
           id="navbarNavAltMarkup"
         >
           <div class="navbar-nav ms-auto">
-            <a class="nav-link" aria-current="page" href="../index.html"
+            <a class="nav-link" aria-current="page" href="./../"
               >home</a
             >
-            <a class="nav-link active" href="./photos.html">photos</a>
-            <a class="nav-link" href="#">webdesign</a>
+            <a class="nav-link" href="./../photos/">photos</a>
+            <a class="nav-link" href="./../projects/">webdesign</a>
           </div>
         </div>
       </div>
     </nav>
-
+<main>
     <div class="container">
       <div
-        class="row"
-        style="
-          text-align: center;
-          display: flex;
-          justify-content: end;
-          height: 40vh;
-        "
-      >
-        <h1
-          class="centered"
-          style="
-            margin: auto;
-            margin-bottom: 0;
-            display: block;
-            font-size: 10vh;
-          "
-        >
-          impressum
-        </h1>
+        class="row centered-parent" >
+        <h1 class="centered"> impressum </h1>
       </div>
 
       <div class="row">
@@ -99,30 +80,10 @@
         </div>
       </div>
     </div>
-
-    <script src="../js/imagezoom.js"></script>
-    <script>
-      function myFunction(x) {
-        if (x.matches) {
-          document
-            .querySelector("#anton_img-nav")
-            .setAttribute("style", "display:block");
-          document
-            .querySelector("#anton_text-nav")
-            .setAttribute("style", "display:none");
-        } else {
-          document
-            .querySelector("#anton_img-nav")
-            .setAttribute("style", "display:none");
-          document
-            .querySelector("#anton_text-nav")
-            .setAttribute("style", "display:block");
-        }
-      }
-
-      var x = window.matchMedia("(max-width: 992px)");
-      myFunction(x);
-      x.addListener(myFunction);
-    </script>
+  </main>
+  <footer class="fixed">
+    <span>&#169; 2021 Anton Detken, Andrin Klarer | contact@antondetken.ch | <a href="./../impressum/">Impressum</a> </span>
+  </footer>
+  <script src="./../js/logoswitch.js"></script>
   </body>
 </html>

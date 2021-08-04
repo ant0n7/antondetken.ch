@@ -2,7 +2,7 @@
   cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' version='1.1'%3E%3Ccircle cx='8' cy='8' r='8' stroke='%23ffffff' stroke-width='0' fill='%23ffffff'%3E%3C/circle%3E%3C/svg%3E") 16 16, pointer !important;
 }
 
-a:hover, .gallery img {
+html a:hover, body a:hover .gallery img {
   cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' version='1.1'%3E%3Ccircle cx='8' cy='8' r='8' stroke='%23DD0814' stroke-width='0' fill='%23DD0814'%3E%3C/circle%3E%3C/svg%3E") 16 16, pointer !important;
 }
 
