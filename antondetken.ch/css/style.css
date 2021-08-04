@@ -43,6 +43,10 @@ body {
   scrollbar-width: none;
 }
 
+.margin-50 {
+  margin-bottom: 50px;
+}
+
 /* ----> NAVBAR-STYLING <---- */
 nav {
   font-size: 22px;
@@ -105,9 +109,21 @@ nav {
   transition: .5s;
 }
 
+.project-gallery img {
+  height: auto !important;
+}
+
 .project-gallery img:hover {
   -webkit-transform: unset;
           transform: unset;
+}
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
 }
 
 .close {
@@ -203,6 +219,12 @@ footer {
   }
   .gallery img {
     height: 300px;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */

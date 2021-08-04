@@ -35,6 +35,10 @@ $border-radius: 5px;
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+
+  .margin-50{
+    margin-bottom: 50px;
+  }
   
   /* ----> NAVBAR-STYLING <---- */
   nav {
@@ -98,9 +102,17 @@ $border-radius: 5px;
   }
 
   .project-gallery img {
+    height: auto !important;
     &:hover {
       transform: unset;
     }
+  }
+
+  .desktop{
+    display: block;
+  }
+  .mobile{
+    display: none ;
   }
 
   .close{
@@ -184,6 +196,12 @@ $border-radius: 5px;
     }
     .gallery img{
       height: 300px;
+    }
+    .desktop{
+      display: none;
+    }
+    .mobile{
+      display: block;
     }
   }
   
