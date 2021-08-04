@@ -2,6 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.antondetken.ch/projects">
+    <meta name="description" content="Development, Webdesign and Photography by Anton Detken">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./../img/favicon.ico" type="image/x-icon">
@@ -28,14 +31,13 @@
     <link rel="stylesheet" href="./../css/futura.css">
     <link rel="stylesheet" href="../css/style.css" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="./../"
           ><p id="anton_text-nav">anton detken</p>
-          <img id="anton_img-nav" src="../img/adlogo-320x320.png" alt="" />
+          <img id="anton_img-nav" src="../img/adlogo-320x320.png" alt="Logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -55,7 +57,7 @@
           <div class="navbar-nav ms-auto">
             <a class="nav-link" aria-current="page" href="./../">home</a>
             <a class="nav-link" href="./../photos/">photos</a>
-            <a class="nav-link active" href="">webdesign</a>
+            <a class="nav-link active" href="./">webdesign</a>
           </div>
         </div>
       </div>
@@ -67,7 +69,7 @@
           <a
             href="https://www.swissbanking.ch/en"
             title="Official SwissBanking-Website"
-            target="_blank"
+            target="_blank" rel="noopener"
           >
             <img class="desktop" src="./../img/proj/sba.jpg" alt="current SwissBanking-Website" />
             <img class="mobile" src="./../img/proj/for-mobile/sba.jpg" alt="current SwissBanking-Website" />
@@ -82,7 +84,7 @@
           <a
             href="https://antondetken.eu/sites/fehralturf/"
             title="Unofficial Fehralturf-Website"
-            target="_blank"
+            target="_blank" rel="noopener"
           >
             <img class="desktop" src="./../img/proj/fehr.jpg" alt="Concept site for the Fehralturf horse race"/>
             <img class="mobile" src="./../img/proj/for-mobile/fehralturf.jpg" alt="Concept site for the Fehralturf horse race"/>
@@ -91,7 +93,9 @@
         </div>
       </div>
     </div>
-
+    <footer class="fixed">
+      <span>&#169; 2021 Anton Detken, Andrin Klarer | contact@antondetken.ch | <a href="./../impressum/">Impressum</a> </span>
+    </footer>
     <script src="../js/logoswitch.js"></script>
   </body>
 </html>
