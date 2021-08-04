@@ -43,6 +43,20 @@ body {
   scrollbar-width: none;
 }
 
+#welcome-text {
+  text-align: center;
+  font-size: 1.9em;
+}
+
+#welcome-text span {
+  font-style: italic;
+}
+
+#welcome-text span.point-out {
+  font-style: normal;
+  font-weight: 500;
+}
+
 .margin-50 {
   margin-bottom: 50px;
 }
