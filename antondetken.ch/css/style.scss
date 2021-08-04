@@ -78,30 +78,7 @@ $border-radius: 5px;
     margin-right: auto;
   }
   
-  /* ----> MEDIAS <---- */
-  @media (max-width: 992px) {
-    #anton_detken-title {
-      width: 75%;
-    }
-    .active{
-      border-right: white solid 2px;
-    }
-    .nav-link{
-      text-decoration: none;
-      text-align: right;
-      margin-right: 12px;
-      margin-top: 8px;
-      margin-bottom: 8px;
-      padding: 0;
-      padding-right: 5px !important;
-    }
-  }
-  
-  @media (max-width: 600px) {
-    #anton_detken-title {
-      width: 100%;
-    }
-  }
+
 
   /* ----> Photos/Gallery <----*/ 
   .gallery img{
@@ -181,6 +158,32 @@ $border-radius: 5px;
   }
 }
   
-
+  /* ----> MEDIAS <---- */
+  @media (max-width: 992px) {
+    #anton_detken-title {
+      width: 75%;
+    }
+    .active{
+      border-right: white solid 2px;
+    }
+    .nav-link{
+      text-decoration: none;
+      text-align: right;
+      margin-right: 12px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      padding: 0;
+      padding-right: 5px !important;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #anton_detken-title {
+      width: 100%;
+    }
+    .gallery img{
+      height: 300px;
+    }
+  }
   
   /*# sourceMappingURL=style.css.map */
