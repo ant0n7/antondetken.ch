@@ -47,7 +47,7 @@
         <div class="row">
           <div class="col-lg-8" data-bs-toggle="modal" data-bs-target="#myModal">
               <span data-bs-target="#myCarousel" data-bs-slide-to="0" title="Click for Fullscreen">
-                  <img src="../img/blg/_DSC2000.jpg" srcset="./../img\blg\for-desktop/_DSC2000.jpg 500w, ./../img/blg/for-mobile/_DSC2000.jpg 300w" sizes="60vw" class="d-block w-100" alt="Photography of white Range Rover Defender">
+                  <img id="img1" src="https://www.freeiconspng.com/thumbs/load-icon-png/load-icon-png-8.png" class="d-block w-100" alt="Photography of white Range Rover Defender">
               </span>
             </div>
             <div class="col-lg-4"></div>
@@ -133,6 +133,55 @@
         <footer class="fixed">
           <span>&#169; 2021 Anton Detken, Andrin Klarer | contact@antondetken.ch | <a href="./../impressum/">Impressum</a> </span>
         </footer>
+
+
+        <script>
+            if(navigator.connection && navigator.connection.effectiveType){
+              if(navigator.connection.effectiveType === '4g' || navigator.connection.effectiveType === '5g'){
+                if(document.documentElement.clientWidth >= 600){
+                  var image = document.getElementById("img1");
+                  var downloadingImage = new Image();
+                  downloadingImage.onload = function(){
+                      image.src = this.src;   
+                  };
+                  downloadingImage.src = "./../img/blg/for-desktop/_DSC2000.jpg";
+                  
+                }
+                else{
+                  console.log("wrong")
+                  var image = document.getElementById("img1");
+                  var downloadingImage = new Image();
+                  downloadingImage.onload = function(){
+                      image.src = this.src;   
+                  };
+                  downloadingImage.src = "./../img/blg/for-mobile/_DSC2000.jpg";
+                }
+                }
+                else{
+                  if(document.documentElement.clientWidth >= 600){
+                  var image = document.getElementById("img1");
+                  var downloadingImage = new Image();
+                  downloadingImage.onload = function(){
+                      image.src = this.src;   
+                  };
+                  downloadingImage.src = "./../img/blg/for-desktop/_DSC2000.jpg";
+                  
+                }
+                else{
+                  console.log("wrong")
+                  var image = document.getElementById("img1");
+                  var downloadingImage = new Image();
+                  downloadingImage.onload = function(){
+                      image.src = this.src;   
+                  };
+                  downloadingImage.src = "./../img/blg/for-mobile/_DSC2000.jpg";
+                }
+                }
+            }
+         
+           
+
+        </script>
       <script src="../js/logoswitch.js" ></script>
 </body>
 </html>
