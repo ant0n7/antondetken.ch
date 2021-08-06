@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.antondetken.ch/photos">
+    <meta name="description" content="Take a look at my self-made photographs">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./../img/favicon.ico" type="image/x-icon">
+    <title>Photos - Anton Detken</title>
+
+    <!-- Google Fonts -->
+
+    <!-- Adobe Fonts -->
+    
+    
+    <!-- Bootstrap 5.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="./../css/futura.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../"><p id="anton_text-nav">anton detken</p> <img id="anton_img-nav" src="../img/adlogo-320x320.png" alt="Logo"></a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar-text" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link " aria-current="page" href="../">home</a>
+              <a class="nav-link active" href="./">photos</a>
+              <a class="nav-link" href="./../projects/">webdesign</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+      <div class="container gallery">
+        <div class="row">
+          <div class="col-lg-8" data-bs-toggle="modal" data-bs-target="#myModal">
+              <span data-bs-target="#myCarousel" data-bs-slide-to="0" title="Click for Fullscreen">
+                  <img src="./../img/blg/_DSC2000.jpg" srcset="./../img\blg\for-desktop/_DSC2000.jpg 500w, ./../img/blg/for-mobile/_DSC2000.jpg 300w" sizes="60vw" class="d-block w-100" alt="Photography of white Range Rover Defender">
+              </span>
+            </div>
+            <div class="col-lg-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-8" data-bs-toggle="modal" data-bs-target="#myModal">
+              <a href="#myCarousel" data-bs-slide-to="1" title="Click for Fullscreen">
+                  <img src="../img/blg/_DSC2349.jpg" srcset="./../img\blg\for-desktop/_DSC2349.jpg 500w, ./../img/blg/for-mobile/_DSC2349.jpg 300w" sizes="60vw" class="d-block w-100" alt="Photography of a departing train in Lugano Switzerland">
+              </a>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-8" data-bs-toggle="modal" data-bs-target="#myModal">
+                  <a href="#myCarousel" data-bs-slide-to="2" title="Click for Fullscreen">
+                    <img loading="lazy" src="../img/blg/_DSC2547.jpg"  srcset="./../img\blg\for-desktop/_DSC2547.jpg 500w, ./../img/blg/for-mobile/_DSC2547.jpg 300w" sizes="60vw" class="d-block w-100" alt="Photography of a young boy standing in the nature">
+                </a>
+              </div>
+              <div class="col-lg-4"></div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4"></div>
+              <div class="col-lg-8" data-bs-toggle="modal" data-bs-target="#myModal">
+                  <a href="#myCarousel" data-bs-slide-to="3" title="Click for Fullscreen">
+                    <img loading="lazy" src="../img/blg/_DSC2749.jpg" srcset="./../img\blg\for-desktop/_DSC2749.jpg 500w, ./../img/blg/for-mobile/_DSC2749.jpg 300w" sizes="60vw" class="d-block w-100" alt="Photography of a white and orange cat">
+                </a>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="col-lg-8" data-bs-toggle="modal" data-bs-target="#myModal">
+                <a href="#myCarousel" data-bs-slide-to="4" title="Click for Fullscreen">
+                    <img loading="lazy" src="../img/blg/_DSC3584.jpg" srcset="./../img\blg\for-desktop/_DSC3584.jpg 500w, ./../img/blg/for-mobile/_DSC3584.jpg 300w" sizes="60vw" class="d-block w-100" alt="Photography of a cat laying next to a Laptop with a running database">
+                </a>
+              </div>
+              <div class="col-lg-4"></div>
+            </div>
+
+            
+    
+            <div class="modal" id="myModal">
+              <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-dialog modal-fullscreen">
+                  <div class="modal-content">
+                  
+                  <div class="modal-body">  
+                    <div id="myCarousel" class="carousel slide" data-interval="false" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img loading="lazy" src="../img/blg/without-compression/_DSC2000.jpg" alt="Fullscreen photography of white Range Rover Defender"/>
+                        </div>
+  
+                        <div class="carousel-item">
+                          <img loading="lazy" src="../img/blg/without-compression/_DSC2349.jpg" alt="Fullscreen photography of a departing train in Lugano Switzerland"/>
+                        </div>
+  
+                        <div class="carousel-item">
+                          <img loading="lazy" src="../img/blg/without-compression/_DSC2547.jpg" alt="Fullscreen photography of a young boy standing in the nature" />
+                        </div>
+                        <div class="carousel-item">
+                          <img loading="lazy" src="../img/blg/without-compression/_DSC2749.jpg" alt="Fullscreen photography of a white and orange cat" />
+                        </div>
+                        <div class="carousel-item">
+                          <img loading="lazy" src="../img/blg/without-compression/_DSC3584.jpg" alt="Fullscreen photography of a cat laying next to a Laptop with a running database" />
+                        </div>
+                      </div>
+  
+                      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    </div>
+              </div>
+              </div>
+            </div>
+        </div>
+      </main>
+        <footer>
+          <span>&#169; 2021 Anton Detken, Andrin Klarer | contact@antondetken.ch | <a href="./../impressum/">Impressum</a> </span>
+        </footer>
+
+
+        
+      <script src="../js/logoswitch.js" ></script>
+</body>
+</html>
