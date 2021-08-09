@@ -61,6 +61,12 @@ body {
 .margin-50 {
   margin-bottom: 50px;
 }
+.notopmargin{
+  margin-top: 0;
+}
+.nobottommargin{
+  margin-bottom: 0;
+}
 
 /* ----> NAVBAR-STYLING <---- */
 nav {
@@ -133,13 +139,32 @@ nav {
   }
 }
 
-.desktop {
+.desktop-img {
   display: block;
 }
-.mobile {
+.mobile-img {
   display: none;
 }
 
+.mobile{
+  display: none;
+}
+.desktop{
+  display: block;
+}
+.project-desc-div{
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 5px;
+  height: 100%;
+}
+.project-desc{
+  padding: 5px;
+  font-size: 1.3rem;
+}
+.nomargin{
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .close {
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFF'><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>");
   color: white;
@@ -193,6 +218,14 @@ nav {
 
 /* ----> MEDIAS <---- */
 @media (max-width: 992px) {
+  
+  .project-desc{
+    padding: 0;
+  }
+
+  .project-desc-div{
+    background-color: unset !important;
+  }
   #anton_detken-title {
     width: 75%;
   }
@@ -208,19 +241,26 @@ nav {
     padding: 0;
     padding-right: 5px !important;
   }
+  .mobile{
+    display: block;
+  }
+  .desktop{
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
+
   #anton_detken-title {
     width: 100%;
   }
   .gallery img {
     height: 300px;
   }
-  .desktop {
+  .desktop-img {
     display: none;
   }
-  .mobile {
+  .mobile-img {
     display: block;
   }
 }

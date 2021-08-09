@@ -70,6 +70,14 @@ body {
   margin-bottom: 50px;
 }
 
+.notopmargin {
+  margin-top: 0;
+}
+
+.nobottommargin {
+  margin-bottom: 0;
+}
+
 /* ----> NAVBAR-STYLING <---- */
 nav {
   font-size: 22px;
@@ -147,12 +155,36 @@ nav {
           transform: unset;
 }
 
-.desktop {
+.desktop-img {
   display: block;
+}
+
+.mobile-img {
+  display: none;
 }
 
 .mobile {
   display: none;
+}
+
+.desktop {
+  display: block;
+}
+
+.project-desc-div {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  height: 100%;
+}
+
+.project-desc {
+  padding: 5px;
+  font-size: 1.3rem;
+}
+
+.nomargin {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .close {
@@ -217,6 +249,12 @@ nav {
 
 /* ----> MEDIAS <---- */
 @media (max-width: 992px) {
+  .project-desc {
+    padding: 0;
+  }
+  .project-desc-div {
+    background-color: unset !important;
+  }
   #anton_detken-title {
     width: 75%;
   }
@@ -232,6 +270,12 @@ nav {
     padding: 0;
     padding-right: 5px !important;
   }
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
@@ -241,10 +285,10 @@ nav {
   .gallery img {
     height: 300px;
   }
-  .desktop {
+  .desktop-img {
     display: none;
   }
-  .mobile {
+  .mobile-img {
     display: block;
   }
 }
